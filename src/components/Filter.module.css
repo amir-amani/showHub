@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    direction: rtl;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.displayDiv {
+    height: 30px;
+    margin-right: 20px;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+    color: black;
+    border: .5px solid black;
+    background-color: gray;
+}
+.displayDiv:hover {
+    opacity: .7;
+}
+
+
+@media only screen and (max-width : 790px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .displayDiv {
+        margin-right: 0px !important;
+        border: none;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .displayDiv {
+        background-color: gray;
+        border: 1px gray solid;
+    }
+}
+

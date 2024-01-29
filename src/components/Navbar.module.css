@@ -1,0 +1,83 @@
+@media only screen and (min-width: 1201px) {
+    .container {
+        /* position: sticky;
+        top: 0; */
+        /* background-color: hsl(0, 0%, 100%); */
+        /* background-color: rgb(245, 245, 245); */
+
+        /* margin-bottom: 20px; */
+    
+        
+        /* WARNING: this might intervene with styles givin to search input and filter */
+        height: fit-content;
+    }    
+}
+
+.componentsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* padding: 20px; */
+}
+.searchLogo {
+    display: flex;
+}
+
+.burgerContainer {
+    display: none;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    height: 80px;
+}
+
+
+.burgerMenuHidden {
+    display: none;
+}
+
+.burgerMenu {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    width: 100vw;
+    height: 100vh;
+    /* background-color: hsla(0, 0%, 6%, 0.6); */
+    background-color: rgb(128, 128, 128, .4);
+    
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: lightgray;
+ }
+
+.logo {
+    width: 90px;
+    height: 100%;
+}
+
+@media only screen and (max-width : 1200px) {
+
+
+    .componentsContainer {
+        display: none;
+    }
+
+    .burgerContainer {
+        display: flex;
+    }
+
+    .logo {
+        width: 70px;
+    }
+}
